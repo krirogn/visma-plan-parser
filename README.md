@@ -4,6 +4,11 @@ The visma-plan-parser is a program that converts a .html from Visma InSchool int
 ## Usage
 To use the program you use the syntax "visma-plan-parser FORMAT FILE DESTINATION". And example would be "visma-plan-parser json p.html p.json"
 
+## Formats
+The supported formats are currently:
+- JSON 3D array object
+- Web, as a basic .html file (mostly for debugging; DO NOT USE)
+
 ## Installing
 To install the visma-plan-parser you have to download the bin from the releases tab, and then you can run it like any other executable.
 
