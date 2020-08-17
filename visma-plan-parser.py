@@ -5,6 +5,11 @@ import sys
 import json
 import array
 
+## Args
+if sys.argv[1] == "-v" or sys.argv[1] == "--version":
+    print ("v1.1")
+    sys.exit()
+
 ## The init data
 if str(sys.argv[2]) != "":
     doc = open(str(sys.argv[2]), "r")
