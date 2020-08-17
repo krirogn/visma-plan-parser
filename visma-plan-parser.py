@@ -91,8 +91,16 @@ def makeArray(type, fileName):
     file.close()
 
 
-## The main
-if sys.argv[1] == "web":
-    makeWeb("plan.html")
-elif sys.argv[1] == "json":
-    makeArray("JSON", "plan.json")
+## Checks if a name is given
+if sys.argv[3] != "":
+    ## The main
+    if sys.argv[1] == "web":
+        makeWeb(sys.argv[3])
+    elif sys.argv[1] == "json":
+        makeArray("JSON", sys.argv[3])
+else:
+    ## The main
+    if sys.argv[1] == "web":
+        makeWeb("plan.html")
+    elif sys.argv[1] == "json":
+        makeArray("JSON", "plan.json")

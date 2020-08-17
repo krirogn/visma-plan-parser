@@ -1,6 +1,10 @@
+# Folders to ignore
 build/
 __pycache__/
 websites/
+dist/
+
+# Files to ignore
 /plan.html
 /plan.json
 /t.html
